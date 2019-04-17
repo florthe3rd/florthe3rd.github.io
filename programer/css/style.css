@@ -1,0 +1,284 @@
+*{
+	scroll-behavior: smooth;
+}
+
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: jua;
+}
+section{
+	height: 100vh;
+	background: #111;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+section.banner{
+	background: url(C:/Users/SC/OneDrive/Documents/portfolio/programer/images/banner.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+section.banner .content{
+	text-align: center;
+}
+
+
+section.banner .content h1{
+	font-size: 120px;
+	text-transform: uppercase;
+	margin: 0 0 20px;
+	padding: 0;
+	color: #e2e2e2;
+	letter-spacing: 5px;
+	font-family: Staatliches;
+}
+
+#red{
+	color: #ec3939;
+}
+
+
+section.banner .content a{
+	border: 2px solid #fff;
+	color: #fff;
+	padding: 10px 40px;
+	font-size: 24px;
+	text-decoration: none;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+
+section.banner .content a:hover{
+	background: #ff0;
+	border: 2px solid #262626;
+	color: #262626;
+}
+
+
+section.banner i{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+section.banner a .fas{
+	color: #fff;
+	font-size: 50px;
+}
+section.banner a .fas:hover{
+	color: #ff0;
+}
+
+
+.post{
+	position: relative;
+	width: 100%;
+	height: 500px;
+	margin: 0 50%;
+	
+}
+.post img{
+		object-fit: fill;
+}
+
+.post .btn{
+	position: absolute;
+	background: #ff0;
+	border: 2px solid #262626;
+	color: #262626;
+	padding: 10px 40px;
+	font-size: 24px;
+	text-decoration: none;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.post .btn:hover{
+	text-decoration: underline;
+}
+
+
+.post .btn.prev{
+	top: 50px;
+	left: -80px;
+	transition: 1s;
+	z-index: 1;
+}
+
+.post .btn.next{
+	bottom: 70px;
+	left: 620px;
+	transition: 1s;
+	z-index: 1;
+}
+
+
+.post-exp{
+	position: absolute;
+	background: rgba(0,0,0,.8);
+	color: #fff;
+	bottom: 40px;
+	left: 20px;
+	font-size: 24px;
+	font-weight: 600px;
+	padding: 20px;
+	line-height: 40px;
+	width: calc(95% - 100px);
+	box-sizing: border-box;
+	transition: 1s;
+}
+.post-title{
+	position: absolute;
+	border: 2px solid #262626;
+	top: -20px;
+	right: 50px;
+	background: #9f9;
+	color: #262626;
+	padding: 10px 40px;
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.post-title span{
+	display: block;
+	line-height: 23px;
+}
+ .post-title #click{
+	font-size: 12px;
+	text-decoration: none;
+}
+.post-title span:hover:nth-of-type(1){
+	text-decoration: underline;
+}
+
+.post-title #about:hover{
+	text-decoration: none;
+}
+
+#post1{
+	background: url(C:/Users/SC/OneDrive/Documents/portfolio/programer/images/me-opa.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+
+#post2{
+	background: url(C:/Users/SC/OneDrive/Documents/portfolio/programer/images/form-opa.jpg);
+	background-size: cover;
+	background-position: center;
+}
+#post3{
+	background: url(C:/Users/SC/OneDrive/Documents/portfolio/programer/images/list-opa.jpg);
+	background-size: cover;
+	background-position: center;
+}
+#post4{
+	background: url(C:/Users/SC/OneDrive/Documents/portfolio/programer/images/table-opa.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#post5{
+	background: url(C:/Users/SC/OneDrive/Documents/portfolio/programer/images/tictactoe-opa.jpg);
+	background-size: cover;
+	background-position: center;
+}
+#post6{
+	background: url(C:/Users/SC/OneDrive/Documents/portfolio/programer/images/photogrid-opa.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#post7{
+	background: url(C:/Users/SC/OneDrive/Documents/portfolio/programer/images/myblog-opa.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#post8{
+	background: url(C:/Users/SC/OneDrive/Documents/portfolio/programer/images/landing-opa.jpg);
+	background-size: cover;
+	background-position: center;
+}
+#post9{
+	background: url(C:/Users/SC/OneDrive/Documents/portfolio/programer/images/gallery-opa.jpg);
+	background-size: cover;
+	background-position: center;
+}
+#post10{
+	background: url(C:/Users/SC/OneDrive/Documents/portfolio/programer/images/scorer-opa.jpg);
+	background-size: cover;
+	background-position: center;
+}
+#post11{
+	background: url(C:/Users/SC/OneDrive/Documents/portfolio/programer/images/colorgame-opa.jpg);
+	background-size: cover;
+	background-position: center;
+}
+#post12{
+	background: url(C:/Users/SC/OneDrive/Documents/portfolio/programer/images/jquery-opa.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+
+@media(max-width: 776px){
+	.post .btn.prev{
+		top: 445px;
+		left: 40px;
+	}
+
+	.post .btn.next{
+		bottom: 0px;
+		left: 270px;
+	}
+
+	.post-exp{
+		bottom: 100px;
+		width: calc(100% - 100px);
+		background: rgba(0,0,0,.9);
+	}
+
+	.post img{
+			width: 500px;
+	}
+
+	
+	section.banner .content h1{
+		font-size: 85px;
+	}
+
+}
+
+
+@media(max-width: 500px){
+	.post img{
+			width: 320px;
+	}
+	.post-exp{
+		bottom: 80px;
+		width: 280px;
+		background: rgba(0,0,0,.9);
+		font-size: 24px;
+	}
+	.post .btn{
+		padding: 5px 20px;
+	}
+	.post .btn.next{
+		bottom: 10px;
+		left: 200px;
+	}
+
+	.post-title{
+		padding: 3px 15px;
+	}
+	section.banner .content h1{
+		font-size: 55px;
+	}
+
+
+}
