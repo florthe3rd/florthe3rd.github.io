@@ -40,6 +40,11 @@
 					"overflow":"auto"
 				});
 		});
+		$('.lightbox').click(function(){
+			$('body').css({
+					"overflow":"auto"
+				});
+		});
 
 		
 
