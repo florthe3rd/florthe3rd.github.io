@@ -58,6 +58,7 @@ body{
 	position: absolute;
 	top: 45%;
 	left: 50%;
+	-webkit-transform: translate(-50%, -34%);
 	transform: translate(-50%, -34%);
 	width: 1000px;
 	height: 500px;
@@ -77,6 +78,8 @@ body{
 }
 
 .container .box:hover{
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
 	transform: scale(1.1);
 	z-index: 2;
 }
@@ -133,6 +136,7 @@ body{
 .container .box .details .content{
 	position: absolute;
 	top: calc(50% + 16px);
+	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 	width: 100%;
 	box-sizing: border-box;
@@ -174,11 +178,13 @@ body{
 	text-shadow: 0px 4px 3px rgba(0,0,0,0.2),
 				0px 8px 13px rgba(0,0,0,0.2),
 				0px 18px 23px rgba(0,0,0,0.2);
+	-webkit-transform: scale(0);
 	transform: scale(0);
 
 
 }
 .container .box:hover .details .content a{
+	-webkit-transform: scale(1);
 	transform: scale(1);
 }
 
@@ -225,6 +231,7 @@ body{
 	.container{
 		top: 15%;
 		left: 0;
+		-webkit-transform: translate(0);
 		transform: translate(0);
 	}
 	.container .box{
@@ -239,6 +246,7 @@ body{
 	.container{
 		top: 18%;
 		left: 0;
+		-webkit-transform: translate(0);
 		transform: translate(0);
 	}
 	.container .box{
