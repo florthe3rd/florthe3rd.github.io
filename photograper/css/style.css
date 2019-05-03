@@ -75,10 +75,32 @@ button{
 }
 
 .hamburger div{
+	position: relative;
 	width: 30px;
   	height: 3px;
   	background-color: white;
  	margin: 6px 0;
+ 	transition: .5s;
+}
+
+
+.toggle.active .hamburger {
+	position: relative;
+	top: 1;
+}
+.toggle.active .hamburger div:nth-of-type(even){
+	background-color: rgba(0,0,0,0);
+}
+
+.toggle.active .hamburger div:nth-of-type(1){
+	position: absolute;
+	top: 0;
+	transform: rotate(45deg);
+}
+.toggle.active .hamburger div:nth-of-type(3){
+	position: absolute;
+	top: 0;
+	transform: rotate(135deg);
 }
 
 
