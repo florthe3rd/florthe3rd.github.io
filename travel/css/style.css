@@ -196,8 +196,8 @@ section.content p{
 
 section.content div img{
 	border: 3px outset rgba(74, 74, 74,0.1);
-	width: 300px;
-	height: 200px;
+	width: 200px;
+	height: 100px;
 }
 
 section.content div{
