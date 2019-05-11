@@ -28,8 +28,6 @@
 
 
 
-
-
 //scroll unlock
 		//	
 		$('.lb-close').click(function(){
