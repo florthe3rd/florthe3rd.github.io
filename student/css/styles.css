@@ -194,10 +194,10 @@ nav ul li a:hover{
 
 .container{
 	position: relative;
-	margin: 10px auto;
+	margin: 100px auto;
 	width: 80%;
 	height: 100%;
-	padding: 10px;
+	padding: 45px;
 	background: linear-gradient(0deg,#000,#262626);
 	box-sizing: border-box;
 	font-family: Signika;
@@ -467,6 +467,15 @@ nav ul.active{
 	.circle{
 		float: none;
 		margin: 10px auto;
+	}
+	.container{
+		padding: 20px;
+	}
+	.container p{
+		font-size: 18px;
+	}
+	.container h2{
+		font-size: 25px;
 	}
 }
 
