@@ -135,7 +135,7 @@ section content .pic1{
 	text-align: center;
 	font-family: Architects Daughter;
 	font-weight: bolder;
-	font-size: 3em;
+	font-size: 4em;
 	text-shadow: 0px 4px 3px rgba(0,0,0,0.5),
 				0px 8px 13px rgba(0,0,0,0.5),
 				0px 18px 23px rgba(0,0,0,0.5);
@@ -196,8 +196,8 @@ section.content p{
 
 section.content div img{
 	border: 3px outset rgba(74, 74, 74,0.1);
-	width: 200px;
-	height: 100px;
+	width: 250px;
+	height: 150px;
 }
 
 section.content div{
