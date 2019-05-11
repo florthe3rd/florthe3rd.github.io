@@ -196,8 +196,8 @@ section.content p{
 
 section.content div img{
 	border: 3px outset rgba(74, 74, 74,0.1);
-	width: 200px;
-	height: 100px;
+	width: 300px;
+	height: 200px;
 }
 
 section.content div{
@@ -259,6 +259,17 @@ fieldset{
 		background: rgba(98, 136, 180,0.8);
 		padding: 20px;
 		display: block;
+	}
+
+
+}
+
+
+@media (max-width: 500px){
+
+	section.content div img{
+		width: 200px;
+		height: 100px
 	}
 
 
