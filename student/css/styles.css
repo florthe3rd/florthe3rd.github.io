@@ -470,6 +470,7 @@ nav ul.active{
 	}
 	.container{
 		padding: 20px;
+		width: 90%;
 	}
 	.container p{
 		font-size: 18px;
@@ -488,6 +489,7 @@ nav ul.active{
 @media(max-width: 320px){
 	.container{
 		padding: 18px;
+		width: 95%
 	}
 	.container p{
 		font-size: 12px;
