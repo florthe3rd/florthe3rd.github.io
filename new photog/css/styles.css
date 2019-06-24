@@ -1,0 +1,555 @@
+*{
+	scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Staatliches;
+	text-decoration:none;
+	list-style-type: none;
+	color: white; 
+	letter-spacing: 1.7px;
+	color: #9b9b9b;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	background: #1c1c1c;
+}
+
+
+
+
+header{
+	background: url(../images/2.jpeg);
+	background-size: cover;
+	background-position: center 10%;
+	height: 100vh;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #1c1c1c; 
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: #9b9b9b; 
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+.welcome{
+	position: absolute;
+	top: 30%;
+	left: 8%;
+}
+
+.welcome h1{
+	color: #fff;
+	font-size: 70px;
+	text-shadow: 0px 2px 5px rgba(0,0,0,0.8);
+	letter-spacing: 5px;
+} 
+
+#red{
+	color: #ec3939;
+}
+
+nav{
+	position: sticky;
+	top: 0;
+	width: 100%;
+	height: 55px;
+	background: rgba(18, 18, 18,.8);
+	z-index: 2;
+}
+nav ul{
+	display: flex;
+	float: right;
+	margin: 0 40px;
+	padding: 0 1%;
+}
+
+nav ul li a{
+	display: block;
+	font-size: 19px;
+	padding: 15px 20px;
+	transition: .5s;
+	font-weight: bold;
+}
+
+nav ul li a:hover{
+	background: #fff;
+	color: #222;
+}
+
+
+.logo{
+	font-size: 24px;
+	letter-spacing: 5px;
+	padding: 10px 50px;
+	line-height: 50px;
+	color: #fff;
+}
+
+.toggle{
+	display: none;
+	position: absolute;
+	right: 50px;
+	top: 8px;
+}
+.hamburger div{
+	width: 30px;
+  	height: 3px;
+  	background-color: #9b9b9b;
+ 	margin: 6px 0;
+ 	transition: .5s;
+}
+
+
+.toggle.active .hamburger{
+	position: relative;
+	top: 1;
+}
+.toggle.active .hamburger div:nth-of-type(even){
+	background-color: rgba(0,0,0,0);
+}
+
+.toggle.active .hamburger div:nth-of-type(1){
+	position: absolute;
+	top: 0;
+	background-color: #9b9b9b;
+	transform: rotate(45deg);
+}
+.toggle.active .hamburger div:nth-of-type(3){
+	position: absolute;
+	top: 0;
+	background-color: #9b9b9b;
+	transform: rotate(135deg);
+}
+
+
+section{
+	height: 100%;
+}
+
+section#portfolio{
+	min-height: 100vh;
+}
+section#contact{
+	margin: 10px 10%;
+	min-height: 60vh;
+}
+section#about, section#service{
+	margin: 10px 10%;
+	min-height: 100vh;
+}
+
+ .container{
+ 	margin: 5px 0;
+	padding: 70px 0;
+	text-align: center;
+}
+
+
+.container h2{
+	font-size: 48px;
+	text-align: center;
+	color: #ec3939;
+	text-shadow: 0px 2px 5px rgba(0,0,0,0.8);
+}
+
+.content{
+	margin: 50px 0; 
+	display: flex;
+	justify-content: center;
+}
+.prof_pic{
+	
+	width: 500px;
+	height: 500px;
+	background: url(../images/1.jpg);
+	background-size: cover;
+	border-radius: 10px;
+	margin: 0 20px;
+}
+
+.phrase{
+	margin: 40px 0; 
+}
+
+.phrase:nth-of-type(2){
+	width: 60%;
+}
+
+.phrase:nth-of-type(1){
+	width: 100%;
+}
+
+.phrase h4{
+	text-align: center;
+	margin: 10px 0;
+	font-size: 28px;
+	color: #ec3939;
+	text-shadow: 0px 2px 5px rgba(0,0,0,0.8);
+}
+
+.phrase p , .phrase i{
+	font-size: 20px;
+	line-height: 1.7;
+	text-align: center;
+}
+
+
+
+
+.box{
+	width: 70%;
+	margin: 0 auto;
+}
+
+.box ul{
+	background: rgb(18, 18, 18);
+	text-align: center;
+	width: 70%;
+	border-radius: 10px;
+	padding: 10px 0;
+	margin: 20px auto;
+}
+
+.box ul li{
+	font-size: 24px;
+	padding: 10px 10px;
+	color: #fff;
+
+}
+
+section#paralax{
+	background: url(../images/4.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	min-height: 70vh;
+}
+
+#paralax h1{
+	width: 100%;
+	height: 100%;
+	min-height: 70vh;
+	padding: 10% 40%;
+	color: #fff;
+	font-size: 70px;
+	text-shadow: 0px 2px 5px rgba(0,0,0,0.8);
+	letter-spacing: 5px;
+}
+
+#icon{
+	width: 100%;
+}
+#icon a{
+	margin: 2%;
+	color: #fff;
+}
+
+#icon a i{
+	height: 50px;
+	width: 	50px;
+}
+
+#icon a i:hover{
+	color: #ec3939;
+}
+
+.container_pic{
+	width: 100%;
+	display: grid;
+	grid-auto-flow: dense;
+	grid-template: 	"1fr 1fr 1fr 1fr 1fr" 33.33vh
+					"1fr 1fr 1fr 1fr 1fr" 33.33vh
+					"1fr 1fr 1fr 1fr 1fr" 33.33vh
+
+					"1fr 1fr 1fr 1fr 1fr" 33.33vh
+					"1fr 1fr 1fr 1fr 1fr" 33.33vh
+					"1fr 1fr 1fr 1fr 1fr" 33.33vh
+
+					"1fr 1fr 1fr 1fr 1fr" 33.33vh
+					"1fr 1fr 1fr 1fr 1fr" 33.33vh
+					"1fr 1fr 1fr 1fr 1fr" 33.33vh
+
+					"1fr 1fr 1fr 1fr 1fr" 33.33vh
+					"1fr 1fr 1fr 1fr 1fr" 33.33vh
+					"1fr 1fr 1fr 1fr 1fr" 33.33vh
+
+					"1fr 1fr 1fr 1fr 1fr" 33.33vh
+					"1fr 1fr 1fr 1fr 1fr" 33.33vh
+					"1fr 1fr 1fr 1fr 1fr" 33.33vh;
+	grid-gap: 5px;
+	margin-top: 60px;
+}
+
+
+.container_pic .box_pic{
+	background: rgb(18, 18, 18);
+	position: relative;
+}
+
+.hover_box{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+
+}
+
+.box_pic:hover .hover_box{
+	background: rgba(18, 18, 18,.6);
+
+}
+
+
+.container_pic .box_pic img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.container_pic .box_pic.a{
+	grid-row: span 2;
+}
+
+.container_pic .box_pic.b,
+.container_pic .box_pic.f,
+.container_pic .box_pic.h,
+.container_pic .box_pic.j{
+	grid-column: span 2;
+}
+
+
+
+
+@media(max-width: 1000px){
+	.content{
+		margin: 50px 0; 
+		display:  block;
+	}
+
+	.prof_pic{
+		width: 300px;
+		height: 300px;
+		border-radius: 50%;
+		margin: 0 auto;
+	}
+
+	.phrase{
+		margin: 40px auto; 
+	}
+	.phrase:nth-of-type(2){
+		width: 100%;
+	}
+
+
+}
+
+
+
+
+
+@media(max-width: 991px){
+	.container_pic{
+		grid-template: 	"1fr 1fr 1fr" 250px
+						"1fr 1fr 1fr" 250px
+						"1fr 1fr 1fr" 250px
+						"1fr 1fr 1fr" 250px
+						"1fr 1fr 1fr" 250px
+
+						"1fr 1fr 1fr" 250px
+						"1fr 1fr 1fr" 250px
+						"1fr 1fr 1fr" 250px
+						"1fr 1fr 1fr" 250px
+						"1fr 1fr 1fr" 250px
+
+						"1fr 1fr 1fr" 250px
+						"1fr 1fr 1fr" 250px
+						"1fr 1fr 1fr" 250px
+						"1fr 1fr 1fr" 250px
+						"1fr 1fr 1fr" 250px
+
+						"1fr 1fr 1fr" 250px
+						"1fr 1fr 1fr" 250px
+						"1fr 1fr 1fr" 250px
+						"1fr 1fr 1fr" 250px
+						"1fr 1fr 1fr" 250px
+
+						"1fr 1fr 1fr" 250px
+						"1fr 1fr 1fr" 250px
+						"1fr 1fr 1fr" 250px
+						"1fr 1fr 1fr" 250px
+						"1fr 1fr 1fr" 250px;
+	}
+
+}
+
+
+
+@media(max-width: 870px){
+	.toggle{
+		display: block;
+		z-index: 1;
+	}
+
+	.display{
+		display: none;
+	}
+
+	.display.active{
+		width: 100%;
+		height: 100%;
+		min-height: 100vh; 
+		z-index: 1;
+		margin: 0 auto;
+		display: block;
+	}
+
+	nav ul{
+		position: fixed;
+		top: 60%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		margin: 0;
+		padding: 0;
+	}
+	nav ul li a{
+		position: relative;
+		font-size: 40px;
+		margin: 20px auto;
+		text-shadow: 0 2px 5px rgba(0,0,0,.5);
+		text-align: center;
+		width: 40%;
+	}
+
+	nav ul li a:hover{
+		background: #fff;
+		color: #222;
+		border-radius: 10px;
+	}
+
+
+
+	.overlay{
+		position: fixed;
+		right: 0;
+		top: -50px;
+		width: 100%;
+		height: 50px;
+		background: rgb(18, 18, 18);
+		transition: transform 0.5s;
+	}
+	.overlay.active{
+		transform: scale(100,100);
+	}
+	*{
+		scroll-behavior: auto;
+	}
+
+}
+
+
+
+
+
+@media(max-width: 768px){
+	.container_pic{
+		grid-template: 	"1fr 1fr" 250px
+						"1fr 1fr" 250px
+						"1fr 1fr" 250px
+						"1fr 1fr" 250px
+						"1fr 1fr" 250px
+						"1fr 1fr" 250px
+						"1fr 1fr" 250px
+
+						"1fr 1fr" 250px
+						"1fr 1fr" 250px
+						"1fr 1fr" 250px
+						"1fr 1fr" 250px
+						"1fr 1fr" 250px
+						"1fr 1fr" 250px
+						"1fr 1fr" 250px
+
+						"1fr 1fr" 250px
+						"1fr 1fr" 250px
+						"1fr 1fr" 250px
+						"1fr 1fr" 250px
+						"1fr 1fr" 250px
+						"1fr 1fr" 250px
+						"1fr 1fr" 250px
+
+						"1fr 1fr" 250px
+						"1fr 1fr" 250px
+						"1fr 1fr" 250px
+						"1fr 1fr" 250px
+						"1fr 1fr" 250px
+						"1fr 1fr" 250px
+						"1fr 1fr" 250px
+
+						"1fr 1fr" 250px
+						"1fr 1fr" 250px
+						"1fr 1fr" 250px
+						"1fr 1fr" 250px
+						"1fr 1fr" 250px
+						"1fr 1fr" 250px
+						"1fr 1fr" 250px;
+	}
+
+}
+
+
+@media(max-width: 768px){
+	.box{
+		width: 100%;
+		margin: 0 auto;
+	}
+	#paralax h1{
+	padding: 10% 30%;
+	font-size: 60px;
+	}	
+}
+
+@media(max-width: 510px){
+	#paralax h1{
+	padding: 20% 20%;
+	font-size: 50px;
+	}	
+}
+
+
+@media(max-width: 440px){
+	.welcome h1{
+		font-size: 40px;
+	} 
+	.prof_pic{
+		width: 200px;
+		height: 200px;
+	}
+	#paralax h1{
+	font-size: 40px;
+	}	
+
+}
+
