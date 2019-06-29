@@ -20,7 +20,7 @@ $(document).ready(function(){
 			$('section').removeClass('active');
 	});
 
-	//nav toggle-date
+	//nav toggle-about
 	$('.toggle-about').click(function(){
 			$('nav').toggleClass('clicked');
 			$('.toggle-date').toggleClass('clicked');

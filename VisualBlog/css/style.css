@@ -218,6 +218,7 @@ nav.clicked{
 	width: 200px;
 	height: 149px;
 	border-radius: 10px;
+	object-fit: cover;
 	box-shadow: 0px 2px 5px rgba(0,0,0,0.8)
 }
 
@@ -249,6 +250,10 @@ nav.clicked{
 	transform: translate3d(0, 0, 0);
 	transition: .5s;
 }
+.toggle-date:hover{
+	background: #72aa93;
+}
+
 .toggle-date.clicked{
 	transform: translate3d(100px, 0, 0);	
 }
@@ -270,9 +275,11 @@ nav.clicked{
 	transition: .5s;
 }
 
+.toggle-about:hover{
+	background: #72aa93;
+}
 .toggle-about.active{
 		transform: translate3d(-100px, 0, 0);
-
 }
 
 .toggle-about .fas{
@@ -660,6 +667,17 @@ section.banner .content a:hover{
 
 
 /*toggle about*/
+
+
+@media(min-width: 1330px){
+	section.clicked{
+		 transform: translate3d(27%, 0, 0);
+	}
+}
+
+
+
+
 
 @media(max-width: 1194px){
 	section.clicked{
